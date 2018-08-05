@@ -1,0 +1,11 @@
+{application,piton,
+             [{applications,[kernel,stdlib,elixir,logger,erlport]},
+              {description,"Run your Python algorithms in parallel and avoid the GIL"},
+              {modules,['Elixir.Mix.Tasks.Piton.Pip',
+                        'Elixir.Mix.Tasks.Piton.Requirements',
+                        'Elixir.Mix.Tasks.Piton.Venv','Elixir.Piton.Pool',
+                        'Elixir.Piton.PoolFunctions','Elixir.Piton.Port',
+                        'Elixir.Piton.PythonFunctions']},
+              {registered,[]},
+              {vsn,"0.3.0"},
+              {extra_applications,[logger]}]}.
