@@ -49,7 +49,7 @@ defmodule Stockex.Mixfile do
       {:httpoison, "~> 1.0"},
       {:bcrypt_elixir, "~> 1.0"},
       {:piton, git: "https://github.com/nutheory/piton.git"},
-      {:dataframe, "~> 0.1.0", path: "deps/dataframe"},
+      # {:dataframe, "~> 0.1.0", path: "deps/dataframe"},
       {:guardian, "~> 1.0"},
       {:exchalk, "~> 1.0.2"}
     ]
