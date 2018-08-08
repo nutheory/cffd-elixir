@@ -48,6 +48,7 @@ def regression(name):
   one_day = 86400
   next_unix = last_unix + one_day
 
+
   for i in forecast_set:
       next_date = datetime.datetime.fromtimestamp(next_unix)
       next_unix += 86400
