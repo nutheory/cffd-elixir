@@ -3,4 +3,4 @@ quandl==3.4.0
 pandas==0.23.3
 scipy==1.1.0
 numpy==1.14.5
-git+git://github.com/nutheory/erlport.git
+erlport==git+git://github.com/nutheory/erlport.git
