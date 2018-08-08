@@ -14,7 +14,7 @@ def regression(name):
   na = name.decode("utf-8")
   print("NNNN",na)
   print("NNNN2",quandl)
-  df = quandl.get(f'WIKI/{na}')
+  df = quandl.get("WIKI/%s"%(na))
   df = df[['Adj. Open',  'Adj. High',  'Adj. Low',  'Adj. Close', 'Adj. Volume']]
   df['HL_PCT'] = (df['Adj. High'] - df['Adj. Low']) / df['Adj. Close'] * 100.0
   df['PCT_change'] = (df['Adj. Close'] - df['Adj. Open']) / df['Adj. Open'] * 100.0
