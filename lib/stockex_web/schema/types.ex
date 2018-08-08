@@ -8,13 +8,13 @@ defmodule StockexWeb.Schema.Types do
     field :adjustments, list_of(:adjustments)
   end
 
+  input_object :input do
+    field :GetStock, :GetStock
+  end
+
   input_object :GetStock do
     field :name, :string
     field :date, :string
-  end
-
-  input_object :input do
-    field :GetStock, :GetStock
   end
 
   object :adjustments do
